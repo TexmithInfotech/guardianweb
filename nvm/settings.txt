@@ -1,0 +1,2 @@
+root: D:\typing-speed\nvm
+path: C:\Program Files\nodejs
