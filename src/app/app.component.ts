@@ -4,6 +4,7 @@ import {GetApiService } from './get-api.service';
 import {Observable, observable} from 'rxjs';
 import {ActivatedRoute,ActivatedRouteSnapshot,Params} from '@angular/router';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
