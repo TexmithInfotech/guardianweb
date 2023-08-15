@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit,ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-paragraph',
@@ -13,8 +13,17 @@ export class ParagraphComponent implements OnInit {
 
   @Input() upcomingSentence = '';
 
-  constructor() { }
+  constructor(private elementRef: ElementRef, private renderer: Renderer2) { 
+   // this.scrollToElement();
 
+  }
+      // scrollToElement() {
+      //   console.log('from scroll into');
+      //   const element = this.elementRef.nativeElement.targetElement');
+      //   console.log('from scroll into',element);
+
+      //   //element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // }
   ngOnInit(): void {
   }
 
