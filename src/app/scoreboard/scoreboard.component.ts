@@ -41,8 +41,8 @@ export class ScoreboardComponent implements OnInit {
       this.time_limit = this.myvar['data']['time_limit'];
 
       this.totalword = this.myvar['data']['paragraph'].match(/\w+/g).length;
-      this.time = this.time_limit;
-
+      this.time = this.time_limit*60;
+      console.log('timing',this.time*60);
     
       //console.log('data',this.myvar['data']['paragraph']);
       //this.resetTest();
