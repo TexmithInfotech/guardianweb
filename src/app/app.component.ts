@@ -45,7 +45,7 @@ myprocess(){
   //console.log('data',this.myvar['data']['paragraph']);
   this.resetTest();
  this.defaultTime = this.time_limit;
-
+ this.defaultTime = this.defaultTime*60;
 }
 
  
