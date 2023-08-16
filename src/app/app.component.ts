@@ -167,6 +167,7 @@ myprocess(){
     this.score.wpm = this.previousWords.length / ((this.defaultTime - timeInSeconds) / 60);
     console.log('wpm',timeInSeconds);
     console.log('defaulttime',this.defaultTime);
+    
     this.score.accuracy = this.previousWords.length ? parseFloat((((this.previousWords.length - this.score.errors) / this.previousWords.length) * 100).toFixed(2)) : 0;
     this.score.incorrect = this.previousWords.length;
     this.score.correct = this.previousWords.length-this.score.errors;
