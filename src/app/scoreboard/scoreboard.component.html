@@ -1,16 +1,18 @@
-<h1 *ngIf="time" class="timer">Time left: {{ time }} seconds</h1>
-<h1 *ngIf="!time" class="timer">Time's up</h1>
+<h2 *ngIf="time" class="timer">Time left: {{ time }} seconds</h2>
+<h2 *ngIf="!time" class="timer">Time's up</h2>
 
-<section class="scores-section">
-  <div class="wpm">Words per minute: {{score.wpm}}</div>
-  <div class="errors">Wrong Words {{score.errors}}</div>
-  <div class="score">Total Words: {{score.total}}</div>
-</section>
-<section class="records">
-  <div class="accuracy">Accuracy: {{score.accuracy}}%</div>
-  <div class="best">
-    Correct Words : {{score.correct}}
-    <span class="new-best" *ngIf="this.lastBest < records.best">&nbsp;(New)</span>
+<section class="main-section">
+  <div class="scores-section">
+    <div class="wpm">Words per minute: {{score.wpm}}</div>
+    <div class="errors">Wrong Words {{score.errors}}</div>
+    <div class="score">Total Words: {{score.total}}</div>
   </div>
-  <div class="last">Inaccuracy: {{score.inaccuracy}}%</div>
+  <div class="records">
+    <div class="accuracy">Accuracy: {{score.accuracy}}%</div>
+    <div class="best">
+      Correct Words : {{score.correct}}
+      <span class="new-best" *ngIf="this.lastBest < records.best">&nbsp;(New)</span>
+    </div>
+    <div class="last">Inaccuracy: {{score.inaccuracy}}%</div>
+  </div>
 </section>
