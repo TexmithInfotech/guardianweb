@@ -15,7 +15,7 @@ export class GetApiService {
   {
     //alert(id);
     //return this.http.get('https://guardianeb.com/api/typing-practice/22');
-    return this.http.get('https://guardianeb.com/api/typing-practice/'+id);
+    return this.http.get('https://www.guardianeb.com/api/typing-practice/'+id);
 
   }
 }
